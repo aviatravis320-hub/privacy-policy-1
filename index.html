@@ -1,21 +1,6 @@
-Here's how to set up a free, permanent privacy policy page on GitHub Pages:
 
-## Step-by-Step: GitHub Pages Privacy Policy
-
-### Step 1: Create a GitHub Repository
-1. Go to [github.com](https://github.com) (create account if needed)
-2. Click the **+** icon → **New repository**
-3. Name it: `privacy-policy`
-4. Make it **Public**
-5. Check **"Add a README file"**
-6. Click **Create repository**
-
-### Step 2: Create the Privacy Policy File
-1. In your new repo, click **Add file** → **Create new file**
-2. Name it: `index.html`
-3. Copy and paste this entire content:
-Action: $ cat /app/frontend/public/privacy-policy.html
-Observation: <!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,77 +9,18 @@ Observation: <!DOCTYPE html>
     <title>Privacy Policy - Vybez Recovery List</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; 
-            line-height: 1.7; 
-            color: #333; 
-            background-color: #f8fafb; 
-            padding: 20px;
-            min-height: 100vh;
-        }
-        .container { 
-            max-width: 800px; 
-            margin: 0 auto; 
-            background: #ffffff; 
-            padding: 40px; 
-            border-radius: 16px; 
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
-        h1 { 
-            color: #4A90A4; 
-            margin-bottom: 8px; 
-            font-size: 32px;
-            font-weight: 700;
-        }
-        .app-name {
-            color: #4A90A4;
-            font-size: 16px;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-        .last-updated { 
-            color: #666; 
-            font-size: 14px;
-            margin-bottom: 32px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        h2 { 
-            color: #2c3e50; 
-            margin-top: 32px; 
-            margin-bottom: 16px; 
-            font-size: 20px;
-            font-weight: 600;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.7; color: #333; background-color: #f8fafb; padding: 20px; min-height: 100vh; }
+        .container { max-width: 800px; margin: 0 auto; background: #ffffff; padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        h1 { color: #4A90A4; margin-bottom: 8px; font-size: 32px; font-weight: 700; }
+        .app-name { color: #4A90A4; font-size: 16px; margin-bottom: 8px; font-weight: 500; }
+        .last-updated { color: #666; font-size: 14px; margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        h2 { color: #2c3e50; margin-top: 32px; margin-bottom: 16px; font-size: 20px; font-weight: 600; }
         p { margin-bottom: 16px; }
-        ul { 
-            margin-left: 24px; 
-            margin-bottom: 16px;
-        }
-        li { 
-            margin-bottom: 10px;
-            padding-left: 4px;
-        }
-        .highlight { 
-            background: linear-gradient(135deg, #4A90A4 0%, #5BA0B4 100%);
-            color: white; 
-            padding: 24px; 
-            border-radius: 12px; 
-            margin-top: 32px;
-        }
-        .highlight p { 
-            margin: 0; 
-            text-align: center;
-            font-size: 15px;
-        }
-        .footer { 
-            margin-top: 40px; 
-            padding-top: 24px; 
-            border-top: 1px solid #eee; 
-            text-align: center; 
-            color: #888;
-            font-size: 14px;
-        }
+        ul { margin-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 10px; padding-left: 4px; }
+        .highlight { background: linear-gradient(135deg, #4A90A4 0%, #5BA0B4 100%); color: white; padding: 24px; border-radius: 12px; margin-top: 32px; }
+        .highlight p { margin: 0; text-align: center; font-size: 15px; }
+        .footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid #eee; text-align: center; color: #888; font-size: 14px; }
         strong { font-weight: 600; }
         a { color: #4A90A4; text-decoration: none; }
         a:hover { text-decoration: underline; }
@@ -105,11 +31,9 @@ Observation: <!DOCTYPE html>
         <p class="app-name">Vybez Recovery List</p>
         <h1>Privacy Policy</h1>
         <p class="last-updated">Last Updated: March 2025</p>
-        
         <h2>1. Introduction</h2>
         <p>Welcome to Vybez Recovery List ("we," "our," or "us"). We are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("App").</p>
         <p>By using our App, you agree to the collection and use of information in accordance with this policy.</p>
-        
         <h2>2. Information We Collect</h2>
         <p><strong>Personal Information You Provide:</strong></p>
         <ul>
@@ -126,7 +50,6 @@ Observation: <!DOCTYPE html>
             <li>Crash reports and performance data</li>
             <li>Approximate location (only when you use the Meeting Finder feature)</li>
         </ul>
-        
         <h2>3. How We Use Your Information</h2>
         <p>We use the information we collect to:</p>
         <ul>
@@ -138,7 +61,6 @@ Observation: <!DOCTYPE html>
             <li>Find nearby recovery meetings (when you grant location permission)</li>
             <li>Respond to your support requests</li>
         </ul>
-        
         <h2>4. Data Storage and Security</h2>
         <p>Your recovery data is primarily stored locally on your device for your privacy. For premium features, some data may be synced to our secure servers.</p>
         <p>We implement industry-standard security measures including:</p>
@@ -148,7 +70,6 @@ Observation: <!DOCTYPE html>
             <li>Regular security assessments</li>
             <li>Limited employee access to personal data</li>
         </ul>
-        
         <h2>5. Third-Party Services</h2>
         <p>We use the following third-party services:</p>
         <ul>
@@ -157,7 +78,6 @@ Observation: <!DOCTYPE html>
             <li><strong>Analytics:</strong> To improve app performance and user experience</li>
         </ul>
         <p>These third-party services have their own privacy policies governing the use of your information.</p>
-        
         <h2>6. Your Rights and Choices</h2>
         <p>You have the right to:</p>
         <ul>
@@ -169,31 +89,274 @@ Observation: <!DOCTYPE html>
             <li>Withdraw consent at any time</li>
         </ul>
         <p>To exercise these rights, contact us at privacy@vybezrecovery.com</p>
-        
         <h2>7. Data Retention</h2>
         <p>We retain your personal information for as long as your account is active or as needed to provide you services. If you request account deletion, we will delete your data within 30 days, except where we are required to retain it for legal purposes.</p>
-        
         <h2>8. Children's Privacy</h2>
         <p>Our App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.</p>
-        
         <h2>9. International Users</h2>
         <p>If you are accessing our App from outside the United States, please be aware that your information may be transferred to, stored, and processed in the United States where our servers are located.</p>
-        
         <h2>10. Changes to This Privacy Policy</h2>
         <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new Privacy Policy in the App and updating the "Last Updated" date above.</p>
-        
         <h2>11. Contact Us</h2>
         <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
         <p><strong>Email:</strong> privacy@vybezrecovery.com</p>
-        
         <div class="highlight">
             <p>By using Vybez Recovery List, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</p>
         </div>
-        
         <div class="footer">
             <p>&copy; 2025 Vybez Recovery List. All rights reserved.</p>
         </div>
     </div>
 </body>
 </html>
-Exit code: 0
+```
+
+5. Click **Commit changes**
+
+Let me know when you've updated it and I'll verify it looks correct!I see there's an issue - you accidentally included my instructions at the top of the page! Let me show you the correct content.
+
+**You need to edit the `index.html` file** and replace ALL the content with ONLY this:
+
+1. Go to your repo: https://github.com/aviatravis320-hub/privacy-policy-1
+2. Click on `index.html`
+3. Click the **pencil icon** (Edit) 
+4. **Delete everything** and paste this clean version:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Vybez Recovery List mobile application">
+    <title>Privacy Policy - Vybez Recovery List</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.7; color: #333; background-color: #f8fafb; padding: 20px; min-height: 100vh; }
+        .container { max-width: 800px; margin: 0 auto; background: #ffffff; padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        h1 { color: #4A90A4; margin-bottom: 8px; font-size: 32px; font-weight: 700; }
+        .app-name { color: #4A90A4; font-size: 16px; margin-bottom: 8px; font-weight: 500; }
+        .last-updated { color: #666; font-size: 14px; margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        h2 { color: #2c3e50; margin-top: 32px; margin-bottom: 16px; font-size: 20px; font-weight: 600; }
+        p { margin-bottom: 16px; }
+        ul { margin-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 10px; padding-left: 4px; }
+        .highlight { background: linear-gradient(135deg, #4A90A4 0%, #5BA0B4 100%); color: white; padding: 24px; border-radius: 12px; margin-top: 32px; }
+        .highlight p { margin: 0; text-align: center; font-size: 15px; }
+        .footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid #eee; text-align: center; color: #888; font-size: 14px; }
+        strong { font-weight: 600; }
+        a { color: #4A90A4; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="app-name">Vybez Recovery List</p>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: March 2025</p>
+        <h2>1. Introduction</h2>
+        <p>Welcome to Vybez Recovery List ("we," "our," or "us"). We are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("App").</p>
+        <p>By using our App, you agree to the collection and use of information in accordance with this policy.</p>
+        <h2>2. Information We Collect</h2>
+        <p><strong>Personal Information You Provide:</strong></p>
+        <ul>
+            <li>Sobriety date and recovery milestones</li>
+            <li>Mood tracking data and journal entries</li>
+            <li>Prayer and meditation preferences</li>
+            <li>Emergency contact information you choose to save</li>
+            <li>Payment information for premium subscriptions (processed securely by Stripe)</li>
+        </ul>
+        <p><strong>Information Collected Automatically:</strong></p>
+        <ul>
+            <li>Device information (device type, operating system version)</li>
+            <li>App usage data and analytics</li>
+            <li>Crash reports and performance data</li>
+            <li>Approximate location (only when you use the Meeting Finder feature)</li>
+        </ul>
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+            <li>Provide, maintain, and improve our services</li>
+            <li>Track and display your recovery progress</li>
+            <li>Personalize your app experience</li>
+            <li>Process subscription payments securely</li>
+            <li>Send important service notifications</li>
+            <li>Find nearby recovery meetings (when you grant location permission)</li>
+            <li>Respond to your support requests</li>
+        </ul>
+        <h2>4. Data Storage and Security</h2>
+        <p>Your recovery data is primarily stored locally on your device for your privacy. For premium features, some data may be synced to our secure servers.</p>
+        <p>We implement industry-standard security measures including:</p>
+        <ul>
+            <li>Encryption of data in transit (HTTPS/TLS)</li>
+            <li>Secure authentication protocols</li>
+            <li>Regular security assessments</li>
+            <li>Limited employee access to personal data</li>
+        </ul>
+        <h2>5. Third-Party Services</h2>
+        <p>We use the following third-party services:</p>
+        <ul>
+            <li><strong>Stripe:</strong> For secure payment processing. Stripe's privacy policy: <a href="https://stripe.com/privacy" target="_blank" rel="noopener">stripe.com/privacy</a></li>
+            <li><strong>Expo/React Native:</strong> For app functionality</li>
+            <li><strong>Analytics:</strong> To improve app performance and user experience</li>
+        </ul>
+        <p>These third-party services have their own privacy policies governing the use of your information.</p>
+        <h2>6. Your Rights and Choices</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access the personal data we hold about you</li>
+            <li>Request correction of inaccurate data</li>
+            <li>Request deletion of your data</li>
+            <li>Export your data in a portable format</li>
+            <li>Opt-out of analytics and non-essential data collection</li>
+            <li>Withdraw consent at any time</li>
+        </ul>
+        <p>To exercise these rights, contact us at privacy@vybezrecovery.com</p>
+        <h2>7. Data Retention</h2>
+        <p>We retain your personal information for as long as your account is active or as needed to provide you services. If you request account deletion, we will delete your data within 30 days, except where we are required to retain it for legal purposes.</p>
+        <h2>8. Children's Privacy</h2>
+        <p>Our App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.</p>
+        <h2>9. International Users</h2>
+        <p>If you are accessing our App from outside the United States, please be aware that your information may be transferred to, stored, and processed in the United States where our servers are located.</p>
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new Privacy Policy in the App and updating the "Last Updated" date above.</p>
+        <h2>11. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
+        <p><strong>Email:</strong> privacy@vybezrecovery.com</p>
+        <div class="highlight">
+            <p>By using Vybez Recovery List, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Vybez Recovery List. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+5. Click **Commit changes**
+
+Let me know when you've updated it and I'll verify it looks correct!I see there's an issue - you accidentally included my instructions at the top of the page! Let me show you the correct content.
+
+**You need to edit the `index.html` file** and replace ALL the content with ONLY this:
+
+1. Go to your repo: https://github.com/aviatravis320-hub/privacy-policy-1
+2. Click on `index.html`
+3. Click the **pencil icon** (Edit) 
+4. **Delete everything** and paste this clean version:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Vybez Recovery List mobile application">
+    <title>Privacy Policy - Vybez Recovery List</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.7; color: #333; background-color: #f8fafb; padding: 20px; min-height: 100vh; }
+        .container { max-width: 800px; margin: 0 auto; background: #ffffff; padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        h1 { color: #4A90A4; margin-bottom: 8px; font-size: 32px; font-weight: 700; }
+        .app-name { color: #4A90A4; font-size: 16px; margin-bottom: 8px; font-weight: 500; }
+        .last-updated { color: #666; font-size: 14px; margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        h2 { color: #2c3e50; margin-top: 32px; margin-bottom: 16px; font-size: 20px; font-weight: 600; }
+        p { margin-bottom: 16px; }
+        ul { margin-left: 24px; margin-bottom: 16px; }
+        li { margin-bottom: 10px; padding-left: 4px; }
+        .highlight { background: linear-gradient(135deg, #4A90A4 0%, #5BA0B4 100%); color: white; padding: 24px; border-radius: 12px; margin-top: 32px; }
+        .highlight p { margin: 0; text-align: center; font-size: 15px; }
+        .footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid #eee; text-align: center; color: #888; font-size: 14px; }
+        strong { font-weight: 600; }
+        a { color: #4A90A4; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="app-name">Vybez Recovery List</p>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: March 2025</p>
+        <h2>1. Introduction</h2>
+        <p>Welcome to Vybez Recovery List ("we," "our," or "us"). We are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application ("App").</p>
+        <p>By using our App, you agree to the collection and use of information in accordance with this policy.</p>
+        <h2>2. Information We Collect</h2>
+        <p><strong>Personal Information You Provide:</strong></p>
+        <ul>
+            <li>Sobriety date and recovery milestones</li>
+            <li>Mood tracking data and journal entries</li>
+            <li>Prayer and meditation preferences</li>
+            <li>Emergency contact information you choose to save</li>
+            <li>Payment information for premium subscriptions (processed securely by Stripe)</li>
+        </ul>
+        <p><strong>Information Collected Automatically:</strong></p>
+        <ul>
+            <li>Device information (device type, operating system version)</li>
+            <li>App usage data and analytics</li>
+            <li>Crash reports and performance data</li>
+            <li>Approximate location (only when you use the Meeting Finder feature)</li>
+        </ul>
+        <h2>3. How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+            <li>Provide, maintain, and improve our services</li>
+            <li>Track and display your recovery progress</li>
+            <li>Personalize your app experience</li>
+            <li>Process subscription payments securely</li>
+            <li>Send important service notifications</li>
+            <li>Find nearby recovery meetings (when you grant location permission)</li>
+            <li>Respond to your support requests</li>
+        </ul>
+        <h2>4. Data Storage and Security</h2>
+        <p>Your recovery data is primarily stored locally on your device for your privacy. For premium features, some data may be synced to our secure servers.</p>
+        <p>We implement industry-standard security measures including:</p>
+        <ul>
+            <li>Encryption of data in transit (HTTPS/TLS)</li>
+            <li>Secure authentication protocols</li>
+            <li>Regular security assessments</li>
+            <li>Limited employee access to personal data</li>
+        </ul>
+        <h2>5. Third-Party Services</h2>
+        <p>We use the following third-party services:</p>
+        <ul>
+            <li><strong>Stripe:</strong> For secure payment processing. Stripe's privacy policy: <a href="https://stripe.com/privacy" target="_blank" rel="noopener">stripe.com/privacy</a></li>
+            <li><strong>Expo/React Native:</strong> For app functionality</li>
+            <li><strong>Analytics:</strong> To improve app performance and user experience</li>
+        </ul>
+        <p>These third-party services have their own privacy policies governing the use of your information.</p>
+        <h2>6. Your Rights and Choices</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access the personal data we hold about you</li>
+            <li>Request correction of inaccurate data</li>
+            <li>Request deletion of your data</li>
+            <li>Export your data in a portable format</li>
+            <li>Opt-out of analytics and non-essential data collection</li>
+            <li>Withdraw consent at any time</li>
+        </ul>
+        <p>To exercise these rights, contact us at privacy@vybezrecovery.com</p>
+        <h2>7. Data Retention</h2>
+        <p>We retain your personal information for as long as your account is active or as needed to provide you services. If you request account deletion, we will delete your data within 30 days, except where we are required to retain it for legal purposes.</p>
+        <h2>8. Children's Privacy</h2>
+        <p>Our App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you believe we have collected information from a child under 13, please contact us immediately.</p>
+        <h2>9. International Users</h2>
+        <p>If you are accessing our App from outside the United States, please be aware that your information may be transferred to, stored, and processed in the United States where our servers are located.</p>
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new Privacy Policy in the App and updating the "Last Updated" date above.</p>
+        <h2>11. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
+        <p><strong>Email:</strong> privacy@vybezrecovery.com</p>
+        <div class="highlight">
+            <p>By using Vybez Recovery List, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2025 Vybez Recovery List. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+5. Click **Commit changes**
+
+Let me know when you've updated it and I'll verify it looks correct!
